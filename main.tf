@@ -17,9 +17,9 @@ resource "aws_instance" "app_server" {
 
     # Connection is necessary for file provisioner to work
     connection {
-      type = "ssh"
-      host = self.public_ip
-      user = "ubuntu"
+      type        = "ssh"
+      host        = self.public_ip
+      user        = "ubuntu"
       private_key = file("aws_id_rsa")
       timeout     = "4m"
     }
@@ -60,6 +60,6 @@ resource "aws_security_group" "allow_ssh" {
 
 #Resource to Create Key Pair
 resource "aws_key_pair" "generated_key" {
-  key_name = var.aws_key_pair_name
+  key_name   = var.aws_key_pair_name
   public_key = file("aws_id_rsa.pub")
 }
