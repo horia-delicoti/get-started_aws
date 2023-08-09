@@ -7,6 +7,7 @@ Build, change and destory AWS infrastrucutre using Terraform.
 - [Homebrew][homebrew]
 - [Git][git]
 - [AWS cli][aws_cli]
+- [AWS account][aws_account]
 - [Terraform cli][terraform_cli]
 
 ## Getting started
@@ -41,3 +42,4 @@ terraform destroy
 [git]: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 [aws_cli]: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 [homebrew]: https://brew.sh
+[aws_account]: https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all

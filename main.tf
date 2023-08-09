@@ -5,7 +5,7 @@ resource "aws_instance" "app_server" {
   vpc_security_group_ids = [aws_security_group.allow_ssh.id]
 
   tags = {
-    Name = "ExampleAppServerInstance"
+    Name = var.instance_name
   }
 
   # cloudinit(provider) and s3
