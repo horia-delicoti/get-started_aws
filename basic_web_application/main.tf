@@ -27,12 +27,11 @@ resource "aws_amplify_app" "front_app" {
         appRoot: basic_web_application
   EOF
 
-
-  custom_rule {
-    source = "/<*>"
-    status = "404"
-    target = "content/index.html"
-  }
+  # custom_rule {
+  #   source = "/<*>"
+  #   status = "404"
+  #   target = "content/index.html"
+  # }
 
   environment_variables = {
     ENV = "test"
