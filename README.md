@@ -19,6 +19,12 @@ export AWS_ACCESS_KEY_ID=<key_id>
 export AWS_SECRET_ACCESS_KEY=<access_key>
 ```
 
+Create ssh keys for copying file
+
+```sh
+ssh-keygen -t rsa -b 4096 -f aws_id_rsa
+```
+
 Initialize the project
 
 ```sh
